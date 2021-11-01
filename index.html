@@ -18,7 +18,7 @@ layout: default
             box or an alert box, and then print the result in a box or on the webpage.</p>
     <script type="text/javascript">
 
-// functions to take the user input, split into letters, reverse it, and then paste it back together
+// put that thing down flip it and reverse it - missy
     function reverse_text(str){
         var splitString = str.split("");
         var reverseArray = splitString.reverse();
@@ -42,24 +42,24 @@ layout: default
 <h1>Part 2</h1>
 <body>
     <p1>Create a function that takes an input number, and prints a table with the first 20 multiples of
-        the number, in order 5x4 (for example type in 2 and it results in a table with 2, 4, 6, 8, etc... </p1>
+        the number, in order 5x4 (for example type in 2 and it results in a table with 2, 4, 6, 8, etc...)</p1>
     <script type="text/javascript">
 
 
-    // create a multiples function and display function to do the calculations and store in a list
+    // pick a number any number and return a list of 20 factors of that number
     function multiples(num){
         list = [];
-        var next_multiple = '<table border="4">';
+        var factorizer = '<table border="4">';
         for (i = 1; i <= 20; i++) {list.push(num * i)};
         for (i = 0; i < 20; i++){
             if (i % 4 == 0) { 
-                next_multiple = next_multiple +'<tr>'
+                factorizer = factorizer +'<tr>'
             };
-            next_multiple = next_multiple + '<td>' + list[i] + '</td>';
+            factorizer = factorizer + '<td>' + list[i] + '</td>';
             if (i % 4 == 3){
-                next_multiple = next_multiple + '</tr>'};};
-        next_multiple = next_multiple + '</table>';
-        return next_multiple
+                factorizer = factorizer + '</tr>'};};
+        factorizer = factorizer + '</table>';
+        return factorizer
     };
 
     function return_table(){
